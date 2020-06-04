@@ -1,3 +1,4 @@
+//Adds row to table.
 addR(){
 
 }
@@ -6,6 +7,7 @@ addC(){
 
 }
 
+//Removes row from table.
 removeR(){
 
 }
@@ -22,10 +24,11 @@ fill(){
 
 }
 
+// Clears table of colors. Resets to default color.
 clearAll(){
 
 }
 
 selected(){
-	
+
 }

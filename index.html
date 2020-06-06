@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Test</title>
-	</head>
-	<body>
-		<button onclick = "addR()">Add Row</button>
-		<button onclick = "addC()">Add Column</button>
-		<button onclick = "removeR()">Remove Row</button>
-		<button onclick = "removeC()">Remove Col</button>
-		<button onclick = "fillU()">Fill All Uncolored</button>
-		<button onclick = "fill()">Fill All</button>
-		<button onclick = "clearAll()">Clear</button>
-		<select onchange = "selected()" id = "selectedID">...</select>
-		<table id = "grid"></table>
-		<button onclick = ""></button>
-		<script src = "scripts.js"></script>
-	</body>
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+<button onclick = "addR()">Add Row</button>
+<button onclick = "addC()">Add Column</button>
+<button onclick = "removeR()">Remove Row</button>
+<button onclick = "removeC()">Remove Col</button>
+<button onclick = "fillU()">Fill All Uncolored</button>
+<button onclick = "fill()">Fill All</button>
+<button onclick = "clearAll()">Clear</button>
+<select onchange = "selected()" id = "selectedID">
+    <option value="SELECT">SELECT</option>
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+    <option value="Yellow">Yellow</option>
+</select>
+<table id = "grid"></table>
+
+
+
+
+<script src = "scripts.js"></script>
+</body>
 </html>

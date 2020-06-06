@@ -1,31 +1,61 @@
-addR(){
+
+let numRows = 0;
+let numCols = 0;
+
+
+function addR(){
 
 }
 
-addC(){
+
+function addC(){
+
+    let table = document.getElementById('grid');
+    let column = document.createElement('td');
+    let row = document.createElement('tr');
+
+    if(numRows === 0){
+
+        row.appendChild(column);
+        table.appendChild(row);
+        numRows++;
+        numCols++;
+
+    }
+    else{
+        let rows = document.getElementsByTagName('tr');
+        for(let row of rows){
+            row.appendChild(column);
+        }
+        numCols++;
+
+    }
+
 
 }
 
-removeR(){
+function removeR(){
 
 }
 
-removeC(){
+function removeC(){
+
 
 }
 
-fillU(){
+function fillU(){
 
 }
 
-fill(){
+function fill(){
 
 }
 
-clearAll(){
+function clearAll(){
 
 }
 
-selected(){
-	
+function selected(){
+
 }
+

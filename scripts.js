@@ -1,3 +1,4 @@
+
 let numRows = 0;
 let numCols = 0;
 
@@ -5,10 +6,6 @@ let numCols = 0;
 function addR(){
 
 }
-
-
-
-
 
 
 function addC(){
@@ -61,3 +58,4 @@ function clearAll(){
 function selected(){
 
 }
+

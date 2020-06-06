@@ -1,0 +1,13 @@
+
+td{
+    height: 50px;
+    width: 50px;
+}
+
+td, tr{
+    border: 1px solid black;
+
+}
+
+
+

@@ -39,6 +39,15 @@ function removeR(){
 }
 
 function removeC(){
+	let rows = document.getElementsByTagName('tr');
+	
+	if(numCols !== 0){
+		for(let r of rows){
+			let x = r.LastElementChild;
+			r.removeChild(x);
+		}
+		numCols--;	
+	}
 
 
 }

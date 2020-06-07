@@ -65,6 +65,6 @@ function clearAll(){
 }
 
 function selected(){
-
+	color = document.getElementById('selectedID').value;
 }
 

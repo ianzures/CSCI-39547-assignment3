@@ -50,6 +50,7 @@ function removeR(){
 }
 
 function removeC(){
+	let table = document.getElementById('grid');
 	let rows = document.getElementsByTagName('tr');
 	
 	if(numCols !== 0){
@@ -58,6 +59,11 @@ function removeC(){
 			r.removeChild(x);
 		}
 		numCols--;	
+	}
+	
+	if(numCols === 0){
+             numRows = 0;
+	     table.innerHTML = "";
 	}
 
 

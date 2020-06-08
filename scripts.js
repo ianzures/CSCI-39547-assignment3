@@ -4,24 +4,23 @@ let numCols = 0;
 
 
 function addR(){
-	let table = document.getElementById('grid');
-
-	//a cell is created by appending a table column to a table row.
-	let cell = document.createElement('tr').appendChild(document.createElement('td'));
-
-	//a cell is appended directly to the table only if the table is empty.
-	if(numCols === 0){
-        table.appendChild(cell);
-        numRows++;
+    let table = document.getElementById('grid');
+    let row = document.createElement('tr');
+    let column = document.createElement('td');
+    if(numCols === 0){
+        row.appendChild(column);
         numCols++;
     }
     else{
-    	let columns = document.tr.children;
-    	for (let c of columns){
-    		c.appendChild(document.createElement('tr'));
-    	}
-    	numRows++;
+        for(let i = 0; i < numCols; i++){
+            column = document.createElement('td');
+            row.appendChild(column);
+        }
     }
+	
+    table.appendChild(row);
+    
+    numRows++;
 }
 
 
@@ -77,5 +76,6 @@ function clearAll(){
 }
 
 function selected(){
-
+	color = document.getElementById('selectedID').value;
 }
+

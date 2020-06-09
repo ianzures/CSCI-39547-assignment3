@@ -8,12 +8,18 @@ function addR(){
     let row = document.createElement('tr');
     let column = document.createElement('td');
     if(numCols === 0){
+	column.addEventListener("click", function(){
+            this.style.backgroundColor = color;
+        })
         row.appendChild(column);
         numCols++;
     }
     else{
         for(let i = 0; i < numCols; i++){
             column = document.createElement('td');
+	    column.addEventListener("click", function(){
+            	this.style.backgroundColor = color;
+            })
             row.appendChild(column);
         }
     }
@@ -34,7 +40,9 @@ function addC(){
     if(numRows === 0){
 
          let column = document.createElement('td');
-       
+         column.addEventListener("click", function(){
+            this.style.backgroundColor = color;
+         })
 
         row.appendChild(column);
         table.appendChild(row);
@@ -46,6 +54,9 @@ function addC(){
         let rows = document.getElementsByTagName('tr');
         for(let row of rows){
             let column = document.createElement('td');
+            column.addEventListener("click", function(){
+            this.style.backgroundColor = color;
+           })
             row.appendChild(column);
         }
         numCols++;

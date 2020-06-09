@@ -46,7 +46,19 @@ function addC(){
 }
 
 function removeR(){
+    if(numRows === 0 ){
+        alert("No rows to left remove.");
+        return;
+    }
+    let table = document.getElementById('grid');
+    let lastRow = table.lastElementChild;
+    /*for(let i = 0; i < numCols; i++){
+        let cell = lastRow.childNodes[0];
+        lastRow.removeChild(cell);
+    }*/
 
+    table.removeChild(lastRow);
+    numRows--;
 }
 
 function removeC(){

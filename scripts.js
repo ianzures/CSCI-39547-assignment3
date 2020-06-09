@@ -21,6 +21,7 @@ function addR(){
     table.appendChild(row);
     
     numRows++;
+    console.log(numRows, numCols);
 }
 
 
@@ -59,6 +60,11 @@ function removeR(){
 
     table.removeChild(lastRow);
     numRows--;
+    if(numRows === 0){
+        numCols = 0;
+    }
+    console.log(numRows, numCols);
+
 }
 
 function removeC(){

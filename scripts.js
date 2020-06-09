@@ -1,4 +1,3 @@
-
 let numRows = 0;
 let numCols = 0;
 let color;
@@ -109,7 +108,14 @@ function fillU(){
 
 function fill(){
 
-  
+ let table = document.getElementById('grid');
+
+    for(let i=0; i<table.rows.length; i++){
+        for(let j=0; j<table.rows[i].cells.length; j++){
+            table.rows[i].cells[j].style.backgroundColor = color;
+        }
+    }
+
 
 }
 

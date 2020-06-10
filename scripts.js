@@ -92,6 +92,7 @@ function removeR(){
     // If all rows are deleted, then all columns have also been deleted. Must update numCols to 0. 
     if(numRows === 0){
         numCols = 0;
+        table.innerHTML = "";
     }
 
     console.log(numRows, numCols);
